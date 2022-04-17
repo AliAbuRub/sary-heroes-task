@@ -1,0 +1,46 @@
+* {
+    font-size: 12px;
+}
+
+.mobile-container{
+  display: none;
+}
+
+table, th, td {
+    border: 2px solid rgb(193, 192, 192);;
+    
+  }
+
+th, td{
+    height: 28px;
+    text-align: left;
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+
+  fa-icon{
+    cursor: pointer;
+  }
+ 
+  @media only screen and (max-width: 850px) {
+    .desktop-container{
+      display: none;
+    }
+    .mobile-container{
+      width: 100%;
+      display: block;
+    }
+
+    table{
+      margin-top:20px ;
+    }
+
+    th{
+      width:30%;
+    }
+   }

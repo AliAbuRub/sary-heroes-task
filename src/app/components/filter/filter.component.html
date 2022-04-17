@@ -1,0 +1,25 @@
+<div class="filter-container">
+  <h4 class="flex">
+    Filters <fa-icon [icon]="faFilter" (click)="collapse()"></fa-icon>
+  </h4>
+  <div #El class="normal">
+    <div class="search-bar">
+      <fa-icon [icon]="faSearch"></fa-icon>
+      <input
+        #sEl
+        type="text"
+        placeholder="Search"
+        required
+        (keyup)="onSearch(sEl.value)"
+      />
+    </div>
+
+    <h5>
+      Sort By Power
+      <label class="switch">
+        <input #fEl type="checkbox" (click)="onToggle(fEl.checked)" />
+        <span class="slider round"></span>
+      </label>
+    </h5>
+  </div>
+</div>

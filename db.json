@@ -1,0 +1,25 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "MR.ROBOT",
+      "powers": "Coding with Vim, Know Angular",
+      "description": "",
+      "rate": 5
+    },
+    {
+      "id": 2,
+      "name": "A. Richard Stallman",
+      "powers": "Freedom Protector",
+      "description": "",
+      "rate": 1
+    },
+    {
+      "id": 3,
+      "name": "Tim Berners-Lee",
+      "powers": "Transport Objects Through HTTP",
+      "description": "",
+      "rate": 3
+    }
+  ]
+}

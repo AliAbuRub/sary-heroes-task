@@ -1,0 +1,107 @@
+<div class="desktop-container">
+  <table>
+    <tr>
+      <th>Hero Name</th>
+      <th>Powers</th>
+      <th>Rate</th>
+    </tr>
+    <tr *ngFor="let hero of filteredHeroes">
+      <td>
+        <a routerLink="/hero/{{ hero.id }}">{{ hero.name }}</a>
+      </td>
+      <td>{{ hero.powers }}</td>
+      <td>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 0 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(1, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 1 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(2, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 2 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(3, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 3 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(4, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 4 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(5, hero)"
+        ></fa-icon>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="mobile-container">
+  <table *ngFor="let hero of filteredHeroes">
+    <tr>
+      <th>Hero Name</th>
+      <td>
+        <a routerLink="/hero/{{ hero.id }}">{{ hero.name }}</a>
+      </td>
+    </tr>
+    <tr>
+      <th>Powers</th>
+      <td>{{ hero.powers }}</td>
+    </tr>
+    <tr>
+      <th>Rate</th>
+      <td>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 0 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(1, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 1 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(2, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 2 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(3, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 3 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(4, hero)"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faStar"
+          [ngStyle]="{
+            color: hero.rate > 4 ? 'rgb(131, 7, 193)' : 'rgb(193, 192, 192)'
+          }"
+          (click)="onRate(5, hero)"
+        ></fa-icon>
+      </td>
+    </tr>
+  </table>
+</div>
